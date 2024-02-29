@@ -2,6 +2,7 @@ from flask import Flask,request,render_template,url_for,jsonify
 import numpy as np
 import pickle,json
 from utils import get_loan_status
+from config import port_number
 
 
 
@@ -41,4 +42,4 @@ def loan_status():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0",port=port_number,debug=False)
