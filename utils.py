@@ -3,8 +3,8 @@ import numpy as np
 import json
 
 def get_loan_status(Gender, Married, Education, Self_Employed, ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term,Credit_History,Property_Area):
-    mobile_path = r"D:\PDS\Flask\Loan_Data\Loan...KNN_clf_model.pkl"
-    mobile_path_J = r'D:\PDS\Flask\Loan_Data\colum_data1.json'
+    mobile_path = r"Loan...KNN_clf_model.pkl"
+    mobile_path_J = r'colum_data1.json'
 
     with open(mobile_path, 'rb') as f:
       model = pickle.load(f)
